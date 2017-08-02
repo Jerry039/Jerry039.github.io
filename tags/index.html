@@ -139,24 +139,6 @@
 
   <title>tags | Jerry's Blog</title>
   
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '',
-      xfbml      : true,
-      version    : 'v2.10'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/zh_Hans/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
 
 
 
@@ -348,12 +330,7 @@
           
   <div class="comments" id="comments">
     
-      <div class="fb-comments"
-           data-href="http://yoursite.com/tags/index.html"
-           data-numposts="10"
-           data-width="100%"
-           data-colorscheme="light">
-      </div>
+      <div id="uyan_frame"></div>
     
   </div>
 
