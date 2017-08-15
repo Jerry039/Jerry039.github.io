@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Next主题," />
+  <meta name="keywords" content="TouchID指纹识别,iOS," />
 
 
 
@@ -93,22 +93,18 @@
 
 
 
-<meta name="description" content="由于我们新搭建的基于Hexo的博客默认的博客主题都为主题默认，系统默认多多少少会有点不如人意，那么这就需要我们自己一步步的进行设置了。  在 Hexo 中有两份主要的配置文件，其名称都是_config.yml。 其中，一份位于站点根目录下(Blog目录下)，主要包含 Hexo 本身的配置；另一份位于主题目录下(Blog–&amp;gt;themes–&amp;gt;next)，这份配置由主题作者提供，主要用于配">
-<meta name="keywords" content="Next主题">
+<meta name="description" content="导入头文件1#import &amp;lt;LocalAuthentication/LocalAuthentication.h&amp;gt; 因为指纹识别是苹果在iOS8才出的一个功能，所以进行判断是不是iOS8以及之后的系统版本123if ([UIDevice currentDevice].systemVersion.floatValue &amp;lt; 8.0) &amp;#123;        return;">
+<meta name="keywords" content="TouchID指纹识别,iOS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo之Next主题">
-<meta property="og:url" content="http://yoursite.com/2017/08/02/Hexo之Next主题/index.html">
+<meta property="og:title" content="iOS调取TouchID(指纹识别)">
+<meta property="og:url" content="http://yoursite.com/2017/08/08/iOS调取TouchID-指纹识别/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="由于我们新搭建的基于Hexo的博客默认的博客主题都为主题默认，系统默认多多少少会有点不如人意，那么这就需要我们自己一步步的进行设置了。  在 Hexo 中有两份主要的配置文件，其名称都是_config.yml。 其中，一份位于站点根目录下(Blog目录下)，主要包含 Hexo 本身的配置；另一份位于主题目录下(Blog–&amp;gt;themes–&amp;gt;next)，这份配置由主题作者提供，主要用于配">
+<meta property="og:description" content="导入头文件1#import &amp;lt;LocalAuthentication/LocalAuthentication.h&amp;gt; 因为指纹识别是苹果在iOS8才出的一个功能，所以进行判断是不是iOS8以及之后的系统版本123if ([UIDevice currentDevice].systemVersion.floatValue &amp;lt; 8.0) &amp;#123;        return;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1935382-1e8ed31360b7c095.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1935382-4a50471bc84a54d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1935382-ed7ab2876ced3802.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-08-15T02:02:16.000Z">
+<meta property="og:updated_time" content="2017-08-15T02:01:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo之Next主题">
-<meta name="twitter:description" content="由于我们新搭建的基于Hexo的博客默认的博客主题都为主题默认，系统默认多多少少会有点不如人意，那么这就需要我们自己一步步的进行设置了。  在 Hexo 中有两份主要的配置文件，其名称都是_config.yml。 其中，一份位于站点根目录下(Blog目录下)，主要包含 Hexo 本身的配置；另一份位于主题目录下(Blog–&amp;gt;themes–&amp;gt;next)，这份配置由主题作者提供，主要用于配">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1935382-1e8ed31360b7c095.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="iOS调取TouchID(指纹识别)">
+<meta name="twitter:description" content="导入头文件1#import &amp;lt;LocalAuthentication/LocalAuthentication.h&amp;gt; 因为指纹识别是苹果在iOS8才出的一个功能，所以进行判断是不是iOS8以及之后的系统版本123if ([UIDevice currentDevice].systemVersion.floatValue &amp;lt; 8.0) &amp;#123;        return;">
 
 
 
@@ -136,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/02/Hexo之Next主题/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/08/iOS调取TouchID-指纹识别/"/>
 
 
 
 
 
-  <title>Hexo之Next主题 | Jerry's Blog</title>
+  <title>iOS调取TouchID(指纹识别) | Jerry's Blog</title>
   
 
 
@@ -315,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/02/Hexo之Next主题/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/08/iOS调取TouchID-指纹识别/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jerry">
@@ -332,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo之Next主题</h1>
+          <h1 class="post-title" itemprop="name headline">iOS调取TouchID(指纹识别)</h1>
         
 
         <div class="post-meta">
@@ -344,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-02T21:24:12+08:00">
-                2017-08-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-08T09:33:12+08:00">
+                2017-08-08
               </time>
             
 
@@ -367,8 +363,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/安装教程/" itemprop="url" rel="index">
-                    <span itemprop="name">安装教程</span>
+                  <a href="/categories/TouchBar/" itemprop="url" rel="index">
+                    <span itemprop="name">TouchBar</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TouchBar/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
                   </a>
                 </span>
 
@@ -384,7 +391,7 @@
 
           
           
-             <span id="/2017/08/02/Hexo之Next主题/" class="leancloud_visitors" data-flag-title="Hexo之Next主题">
+             <span id="/2017/08/08/iOS调取TouchID-指纹识别/" class="leancloud_visitors" data-flag-title="iOS调取TouchID(指纹识别)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -413,7 +420,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  2,922
+                  306
                 </span>
               
 
@@ -429,7 +436,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  11
+                  1
                 </span>
               
             </div>
@@ -447,120 +454,9 @@
       
 
       
-        <blockquote>
-<p>由于我们新搭建的基于Hexo的博客默认的博客主题都为主题默认，系统默认多多少少会有点不如人意，那么这就需要我们自己一步步的进行设置了。</p>
-</blockquote>
-<p>在 Hexo 中有两份主要的配置文件，其名称都是<code>_config.yml</code>。 其中，一份位于<strong>站点根目录</strong>下(Blog目录下)，主要包含 Hexo 本身的配置；另一份位于<strong>主题目录</strong>下(Blog–&gt;themes–&gt;next)，这份配置由主题作者提供，主要用于配置主题相关的选项。</p>
-<p>为了描述方便，在以下说明中，将前者称为<strong>站点配置文件</strong>， 后者称为 <strong>主题配置文件</strong>。<br>** 切记所有的配置文件所有属性的设置，其<code>:</code>后必须有一个空格。</p>
-<p>#安装theme<br>你可以到<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo官网主题页</a>去搜寻自己喜欢的theme。那么我们这里以<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">hexo-theme-next</a>为例</p>
-<p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">next配置文件的文档传送门</a></p>
-<p>终端cd到 blog<br> 目录下执行如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure></p>
-<p>将<code>blog</code>目录下<code>_config.yml</code>里<code>theme</code>的名称<code>landscape</code>修改为<code>next</code></p>
-<p>终端cd到<code>blog</code>目录下执行如下命令(每次部署文章的步骤)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean           //清除缓存文件 (db.json) 和已生成的静态文件 (public)</div><div class="line">$ hexo g             //生成缓存和静态文件</div><div class="line">$ hexo d             //重新部署到服务器</div></pre></td></tr></table></figure></p>
-<p>到这里，接着上篇文章的配置，就可以看到如下的界面：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1935382-1e8ed31360b7c095.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ20170801-190321.png"></p>
-<p>#主题设定</p>
-<p>###选择 Scheme</p>
-<p>NexT为我们提供了多种不同的外观，我们可以根据自己的喜好进行配置。</p>
-<ul>
-<li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白<ul>
-<li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
-<li>Pisces - 双栏 Scheme，小家碧玉似的清新<br>修改的话去<strong>主题配置文件</strong>下搜索<code>scheme</code>取消前边的#即可。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#scheme: Muse</div><div class="line">#scheme: Mist</div><div class="line">scheme: Pisces</div></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<p>###设置预览摘要<br>设置完模式后，读者们会发现，尽管首页显示的是所有文章的列表，但是每一篇文章都显示了所有内容，这样感觉看起来不舒服，这时候可以启用预览摘要模式，在主题配置文件中找到<code>auto_excerpt</code>属性，将<code>enable</code>设置为<code>true</code> ，将<code>length</code>设置为想要预览到的字数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">auto_excerpt:</div><div class="line">    enable: true</div><div class="line">    length: 150</div></pre></td></tr></table></figure></p>
-<p>###设置语言<br>编辑<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">language: zh-Hans</div></pre></td></tr></table></figure></p>
-<p>###设置菜单<br>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 NexT 使用的是 <a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a> 提供的图标， Font Awesome 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 Retina 屏幕下 图标模糊的问题。</p>
-<p>编辑<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">搜索menu字段，菜单内容的设置格式是：`item name: link`。其中 item name 是一个名称，用于匹配图标以及翻译。</div></pre></td></tr></table></figure></p>
-<p>menu:<br>  home: /<br>  archives: /archives</p>
-<p>  #about: /about</p>
-<p>  #categories: /categories<br>  tags: /tags</p>
-<p>  #commonweal: /404.html<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">设置菜单项的显示文本。在上一步中设置的菜单的名称并不直接用于界面上的展示。Hexo 在生成的时候将使用 这个名称查找对应的语言翻译，并提取显示文本。这些翻译文本放置在 NexT 主题目录下的 languages/&#123;language&#125;.yml （&#123;language&#125; 为你所使用的语言）。</div><div class="line"></div><div class="line">**当我们需要增加我们自定义的菜单选项的时候，可以采用下边的方法**</div><div class="line"></div><div class="line">以简体中文为例，若你需要添加一个菜单项，比如 something。那么就需要修改简体中文对应的翻译文件 languages/zh-Hans.yml，在 menu 字段下添加一项：</div></pre></td></tr></table></figure></p>
-<p>menu:<br>  home: 首页<br>  archives: 归档<br>  categories: 分类<br>  tags: 标签<br>  about: 关于<br>  search: 搜索<br>  commonweal: 公益404<br>  something: 有料<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">设定菜单项的图标，对应的字段是 `menu_icons`。 此设定格式是 `item name: icon name`，其中 `item name` 与上一步所配置的菜单名字对应，`icon name` 是 `Font Awesome` 图标的 名字。而 `enable` 可用于控制是否显示图标，你可以设置成 `false` 来去掉图标。(注意严格区分大小写)</div></pre></td></tr></table></figure></p>
-<p>menu_icons:<br>  enable: true</p>
-<h1 id="Icon-Mapping"><a href="#Icon-Mapping" class="headerlink" title="Icon Mapping."></a>Icon Mapping.</h1><p>  home: home<br>  about: user<br>  categories: th<br>  tags: tags<br>  archives: archive<br>  commonweal: heartbeat<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">然后在Hexo根目录执行指令如下：</div></pre></td></tr></table></figure></p>
-<p>// 添加分类页面<br>hexo new page “categories”<br>// 添加标签页面<br>hexo new page “tags”<br>// 添加关于页面<br>hexo new page “about”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">执行完上述指令后，在Hexo根目录`/source/`文件夹下创建三个文件夹，命名分别为：`categories`、`tags`、`about`文件夹，在这些文件夹中分别会创建一个以`index`命名的`Markdown`文件，对这三个`Markdown`文件内容进行修改，使之分别为：</div></pre></td></tr></table></figure></p>
-<hr>
-<p>title: categories<br>date: 2017-03-12 22:06:24</p>
-<h2 id="type-“categories”"><a href="#type-“categories”" class="headerlink" title="type: “categories”"></a>type: “categories”</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">---</div><div class="line">title: 标签</div><div class="line">date: 2017-03-12 17:27:16</div><div class="line">type: &quot;tags&quot;</div><div class="line">---</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: about</div><div class="line">date: 2017-03-12 22:07:26</div><div class="line">type: &quot;about&quot;</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>完成文件的修改，然后部署Hexo即可完成菜单选项的添加。</p>
-<p>###设置侧边栏</p>
-<p>可以通过修改 <code>主题配置文件</code> 中的 <code>sidebar</code> 字段来控制侧栏的行为。侧栏的设置包括两个部分，其一是侧栏的位置， 其二是侧栏显示的时机。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sidebar:</div><div class="line">  position: left     或者  right</div></pre></td></tr></table></figure></p>
-<p>设置侧栏显示的时机，修改 <code>sidebar.display</code> 的值</p>
-<ul>
-<li>post - 默认行为，在文章页面（拥有目录列表）时显示</li>
-<li>always - 在所有页面中都显示</li>
-<li>hide - 在所有页面中都隐藏（可以手动展开）</li>
-<li>remove - 完全移除<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sidebar:</div><div class="line">  display: post</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>###设置头像</p>
-<p>编辑 <code>主题配置文件</code>， 修改字段 <code>avatar</code>， 值设置成头像的链接地址。其中，头像的链接地址可以是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">完整的互联网url:  http://example.com/avatar.png</div><div class="line">站点内的地址:   将头像放置主题目录下的 source/uploads/（新建 uploads 目录若不存在） </div><div class="line">              配置为：avatar: /uploads/avatar.png </div><div class="line">              或者 放置在 source/images/ 目录下 </div><div class="line">              配置为：avatar: /images/avatar.png</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">avatar: uploads/avatar.png</div></pre></td></tr></table></figure>
-<p>###设置作者昵称<br>设置<code>站点配置文件</code>,编辑<code>author</code>字段。</p>
-<p>###站点描述/个性签名<br>设置<code>站点配置文件</code>，编辑<code>description</code>字段。</p>
-<p>###阅读次数统计<br>阅读统计我这边使用的是<a href="https://leancloud.cn" target="_blank" rel="external">LeanCloud</a>。参考 <a href="https://github.com/iissnan/hexo-theme-next/pull/439" target="_blank" rel="external">Doublemine</a> 的文章 <a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="external">为NexT主题添加文章阅读量统计功能</a><br>集成流程如下：<br>进入<a href="https://leancloud.cn" target="_blank" rel="external">LeanCloud</a>注册账号且验证邮箱之后。<br>点击控制台      ——–&gt;      点击创建应用——–&gt;弹出的对话框，给应用起个相对有意义的名字——–&gt;左边的侧边栏点击创建class——–&gt;新建的class命名为<code>Counter</code>，权限设置为<strong>无限制</strong>——–&gt;点击页面侧边栏上的设置按钮——–&gt;点击应用Key——–&gt;赋值AppID和AppKey——–&gt;在<code>主题配置文件</code>的相应位置填入既可(在配置文件中搜索<code>leancloud_visitors</code>进行填写，防止重复设置)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">leancloud_visitors:</div><div class="line">  enable: true</div><div class="line">  app_id: joaeuuc4hsqudUUwx4gIvGF6-gzGzoHsz</div><div class="line">  app_key: E9UJsJpw1omCHuS22PdSpKoh</div></pre></td></tr></table></figure></p>
-<p>为了安全起见，选择刚才的设置界面下的安全中心，在<code>Web 安全域名</code>中填入我们自己的博客域名，来确保数据调用的安全.</p>
-<p>###添加社交链接<br>我们如果希望在个人博客中加入自己的简书和Github链接以提高访问量，接下来了解一下社交链接如何添加：</p>
-<ul>
-<li>添加链接</li>
-</ul>
-<p>在<code>主题配置文件</code>中找到<code>social</code>属性，在其下方添加社交链接，其格式为：<code>社交平台名称：链接</code>。例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">social:</div><div class="line">    Github: https://github.com    //这里写你个人的github的主页地址</div></pre></td></tr></table></figure></p>
-<ul>
-<li>添加链接图表<br>链接的图标全部来自于<a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a> ，其配置方式也很简单，在<strong>主题配置文件</strong>中找到<code>social_icons</code>，修改其状态值为<code>true</code>，然后配置对应链接的图标，其格式为：<code>社交平台名称(与添加链接名称保持一致): Font Awesome中的图标的名字（区分大小写）</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">social_icons:</div><div class="line">    enable: true</div><div class="line">    Github: github</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>###添加评论功能</p>
-<ul>
-<li>注册有言账号<br>打开<a href="http://www.uyan.cc/" target="_blank" rel="external">友言官网</a>，单击“注册”按钮后，按照流程注册账号。</li>
-<li>获取uid<br>注册完成之后会在下方看到<strong>后台管理</strong>，点击进入可看到自己的用户ID，将其复制下来。</li>
-</ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1935382-4a50471bc84a54d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="32352346-7342-4DC5-A633-8127A99BA860.png"></p>
-<ul>
-<li>主题配置文件设置uid<br>打开<code>主题配置文件</code>在其中找到属性<code>youyan_uid</code>，然后在:后添加之前复制的uid<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">youyan_uid: 你刚才复制的有言uid</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>到这里，进行部署，在我们的博客上就能看到评论功能了。</p>
-<h3 id="添加搜索功能"><a href="#添加搜索功能" class="headerlink" title="添加搜索功能"></a>添加搜索功能</h3><p>更多搜索服务可以点击这里<a href="http://theme-next.iissnan.com/third-party-services.html#algolia-search" target="_blank" rel="external">传送门</a></p>
-<ul>
-<li>注册Algolia，创建Index<br>在<a href="https://www.algolia.com/" target="_blank" rel="external">Algolia官网</a>注册一个账户，完成账户注册后，创建一个Index，如下图：</li>
-</ul>
-<p>![Uploading QQ20170802-104759@2x_135446.png . . .]</p>
-<ul>
-<li>安装Hexo Algolia(我按照官方给出的教程进行安装，当我<code>Hexo Algolia</code>的时候提示我<code>FATAL Something&#39;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</code>，网上查了下，说可能是因为git的版本太新，卸载换旧版本就好。为此我放弃了这种方法。)<br>在Hexo根目录执行如下指令，进行Hexo Algolia的安装：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save hexo-algolia</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>执行完指令后，读者们可能会发现安装失败，或发现安装成功后实现的搜索功能可以搜索但是不可以点击搜索到的文章，这是因为5.1.0版本NexT在<code>package.json</code>文件的配置中存在错误。</p>
-<p>到<code>Hexo</code>的根目录，在其中找到<code>package.json</code>文件，修改其中的<code>hexo-algolia</code>属性值为<code>^0.2.0</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&quot;hexo-algolia&quot;: &quot;^0.2.0&quot;</div></pre></td></tr></table></figure></p>
-<p>然后再执行上述的安装指令。</p>
-<ul>
-<li>获取Key，修改站点配置<br>完成Hexo Algolia后，回到Algolia官网的Dashboard，在左侧导航栏选择API Keys一项，跳转到如下图所示的页面:</li>
-</ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1935382-ed7ab2876ced3802.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ20170802-111306@2x.png"></p>
-<p>基于这个页面的Key，编辑<strong>站点配置文件</strong>，在文件内容最后添加如下图所示的信息，包括 <code>ApplicationID</code>、<code>Search-Only API Key</code>、 <code>Admin API Key</code>和<code>indexName</code>，其中<code>apiKey</code>就是<code>Search-Only API Key</code>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">algolia:</div><div class="line">  applicationID: &apos;applicationID&apos;</div><div class="line">  apiKey: &apos;apiKey&apos;</div><div class="line">  adminApiKey: &apos;adminApiKey&apos;</div><div class="line">  indexName: &apos;indexName&apos;</div><div class="line">  chunkSize: 5000</div></pre></td></tr></table></figure></p>
-<p>当配置完成，在站点根目录下执行 <code>hexo algolia</code> 来更新 Index。请注意观察命令的输出。</p>
-<p>![Upload QQ20170802-134155@2x.png failed. Please try again.]</p>
-<p>更改<code>主题配置文件</code>，找到 <code>Algolia Search</code> 配置部分：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"># Algolia Search</div><div class="line">algolia_search:</div><div class="line">  enable: false</div><div class="line">  hits:</div><div class="line">    per_page: 10</div><div class="line">  labels:</div><div class="line">    input_placeholder: Search for Posts</div><div class="line">    hits_empty: &quot;We didn&apos;t find any results for the search: $&#123;query&#125;&quot;</div><div class="line">    hits_stats: &quot;$&#123;hits&#125; results found in $&#123;time&#125; ms&quot;</div></pre></td></tr></table></figure></p>
-<p>将 <code>enable</code> 改为 <code>true</code> 即可，根据需要你可以调整 labels 中的文本。</p>
-<h3 id="Local-Search搜索服务（这个搜索服务相对简单，只需要简单三步就能实现搜索服务）"><a href="#Local-Search搜索服务（这个搜索服务相对简单，只需要简单三步就能实现搜索服务）" class="headerlink" title="Local Search搜索服务（这个搜索服务相对简单，只需要简单三步就能实现搜索服务）"></a>Local Search搜索服务（这个搜索服务相对简单，只需要简单三步就能实现搜索服务）</h3><ul>
-<li><p>安装<code>hexo-generator-searchdb</code>，在站点的根目录下执行以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-generator-searchdb</div></pre></td></tr></table></figure>
-</li>
-<li><p>编辑 <code>站点配置文件</code>，新增以下内容到任意位置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">search:</div><div class="line">  path: search.xml</div><div class="line">  field: post</div><div class="line">  format: html</div><div class="line">  limit: 10000</div></pre></td></tr></table></figure>
-</li>
-<li><p>编辑 <code>主题配置文件</code>，启用本地搜索功能：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># Local search</div><div class="line">local_search:</div><div class="line">  enable: true</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="添加友情链接功能"><a href="#添加友情链接功能" class="headerlink" title="添加友情链接功能"></a>添加友情链接功能</h3><p>相信我们的朋友之间也有很多使用其他博客搭建工具如wordpress、jekyll等来搭建自己的博客，写的文章多了，当然希望可以收获更多的流量，这时候好友之间就会互相帮忙，在自己的博客上添加好友的博客链接。实现功能如下：</p>
-<p>在主题配置文件中找到<code>links</code>属性，修改<code>links_title</code>属性的值为“友情链接”（也可以是其他文案），然后添加上好友的博客名称和博客地址，其格式如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">博客名称: 博客链接</div><div class="line">例如：</div><div class="line">links_title: 友情链接</div><div class="line">links:</div><div class="line">  Mr_默: https://moandroid.github.io</div></pre></td></tr></table></figure></p>
-<p>部署好之后，这样就实现了友情链接了，大家可以去自己博客地址看下。</p>
-<p>更多炫酷的效果可以参照[ <a href="http://blog.csdn.net/qq_33699981/article/details/72716951" target="_blank" rel="external">hexo的next主题个性化教程</a>]</p>
-
+        <h1 id="导入头文件"><a href="#导入头文件" class="headerlink" title="导入头文件"></a>导入头文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#import &lt;LocalAuthentication/LocalAuthentication.h&gt;</div></pre></td></tr></table></figure>
+<h1 id="因为指纹识别是苹果在iOS8才出的一个功能，所以进行判断是不是iOS8以及之后的系统版本"><a href="#因为指纹识别是苹果在iOS8才出的一个功能，所以进行判断是不是iOS8以及之后的系统版本" class="headerlink" title="因为指纹识别是苹果在iOS8才出的一个功能，所以进行判断是不是iOS8以及之后的系统版本"></a>因为指纹识别是苹果在iOS8才出的一个功能，所以进行判断是不是iOS8以及之后的系统版本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">if ([UIDevice currentDevice].systemVersion.floatValue &lt; 8.0) &#123;</div><div class="line">        return;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h1 id="获取指纹识别"><a href="#获取指纹识别" class="headerlink" title="获取指纹识别"></a>获取指纹识别</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div></pre></td><td class="code"><pre><div class="line">- (void)getTouchIDMethod</div><div class="line">&#123;</div><div class="line">    //创建LAContext</div><div class="line">    LAContext* context = [[LAContext alloc] init];</div><div class="line">    NSError* error = nil;</div><div class="line">    NSString* result = @&quot;请验证已有指纹&quot;;</div><div class="line">    </div><div class="line">    //首先使用canEvaluatePolicy 判断设备支持状态</div><div class="line">    if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&amp;error]) &#123;</div><div class="line">        //支持指纹验证</div><div class="line">        [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:result reply:^(BOOL success, NSError *error) &#123;</div><div class="line">            if (success) &#123;</div><div class="line">                //验证成功，主线程处理UI</div><div class="line">                NSLog(@&quot;验证成功&quot;);</div><div class="line">            &#125;</div><div class="line">            else</div><div class="line">            &#123;</div><div class="line">                NSLog(@&quot;%@&quot;,error.localizedDescription);</div><div class="line">                switch (error.code) &#123;</div><div class="line">                    case LAErrorSystemCancel:</div><div class="line">                    &#123;</div><div class="line">                        //系统取消授权，如其他APP切入</div><div class="line">                        break;</div><div class="line">                    &#125;</div><div class="line">                    case LAErrorUserCancel:</div><div class="line">                    &#123;</div><div class="line">                        //用户取消验证Touch ID</div><div class="line">                        break;</div><div class="line">                    &#125;</div><div class="line">                    case LAErrorAuthenticationFailed:</div><div class="line">                    &#123;</div><div class="line">                        //授权失败</div><div class="line">                        break;</div><div class="line">                    &#125;</div><div class="line">                    case LAErrorPasscodeNotSet:</div><div class="line">                    &#123;</div><div class="line">                        //系统未设置密码</div><div class="line">                        break;</div><div class="line">                    &#125;</div><div class="line">                    case LAErrorTouchIDNotAvailable:</div><div class="line">                    &#123;</div><div class="line">                        //设备Touch ID不可用，例如未打开</div><div class="line">                        break;</div><div class="line">                    &#125;</div><div class="line">                    case LAErrorTouchIDNotEnrolled:</div><div class="line">                    &#123;</div><div class="line">                        //设备Touch ID不可用，用户未录入</div><div class="line">                        break;</div><div class="line">                    &#125;</div><div class="line">                    case LAErrorUserFallback:</div><div class="line">                    &#123;</div><div class="line">                        [[NSOperationQueue mainQueue] addOperationWithBlock:^&#123;</div><div class="line">                            //用户选择输入密码，切换主线程处理</div><div class="line">                            </div><div class="line">                        &#125;];</div><div class="line">                        break;</div><div class="line">                    &#125;</div><div class="line">                    default:</div><div class="line">                    &#123;</div><div class="line">                        [[NSOperationQueue mainQueue] addOperationWithBlock:^&#123;</div><div class="line">                            //其他情况，切换主线程处理</div><div class="line">                        &#125;];</div><div class="line">                        break;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;];</div><div class="line">    &#125;</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        //不支持指纹识别，LOG出错误详情</div><div class="line">        NSLog(@&quot;不支持指纹识别&quot;);</div><div class="line">        </div><div class="line">        switch (error.code) &#123;</div><div class="line">            case LAErrorTouchIDNotEnrolled:</div><div class="line">            &#123;</div><div class="line">                NSLog(@&quot;TouchID is not enrolled&quot;);</div><div class="line">                break;</div><div class="line">            &#125;</div><div class="line">            case LAErrorPasscodeNotSet:</div><div class="line">            &#123;</div><div class="line">                NSLog(@&quot;A passcode has not been set&quot;);</div><div class="line">                break;</div><div class="line">            &#125;</div><div class="line">            default:</div><div class="line">            &#123;</div><div class="line">                NSLog(@&quot;TouchID not available&quot;);</div><div class="line">                break;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        NSLog(@&quot;%@&quot;,error.localizedDescription);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -589,7 +485,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Next主题/" rel="tag"><i class="fa fa-tag"></i> Next主题</a>
+            <a href="/tags/TouchID指纹识别/" rel="tag"><i class="fa fa-tag"></i> TouchID指纹识别</a>
+          
+            <a href="/tags/iOS/" rel="tag"><i class="fa fa-tag"></i> iOS</a>
           
         </div>
       
@@ -615,8 +513,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/31/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/08/02/Hexo之Next主题/" rel="next" title="Hexo之Next主题">
+                <i class="fa fa-chevron-left"></i> Hexo之Next主题
               </a>
             
           </div>
@@ -624,10 +522,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/08/iOS调取TouchID-指纹识别/" rel="prev" title="iOS调取TouchID(指纹识别)">
-                iOS调取TouchID(指纹识别) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -833,7 +727,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Icon-Mapping"><span class="nav-number">1.</span> <span class="nav-text">Icon Mapping.</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#type-“categories”"><span class="nav-number">1.1.</span> <span class="nav-text">type: “categories”</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加搜索功能"><span class="nav-number">1.1.1.</span> <span class="nav-text">添加搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Local-Search搜索服务（这个搜索服务相对简单，只需要简单三步就能实现搜索服务）"><span class="nav-number">1.1.2.</span> <span class="nav-text">Local Search搜索服务（这个搜索服务相对简单，只需要简单三步就能实现搜索服务）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加友情链接功能"><span class="nav-number">1.1.3.</span> <span class="nav-text">添加友情链接功能</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#导入头文件"><span class="nav-number">1.</span> <span class="nav-text">导入头文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#因为指纹识别是苹果在iOS8才出的一个功能，所以进行判断是不是iOS8以及之后的系统版本"><span class="nav-number">2.</span> <span class="nav-text">因为指纹识别是苹果在iOS8才出的一个功能，所以进行判断是不是iOS8以及之后的系统版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#获取指纹识别"><span class="nav-number">3.</span> <span class="nav-text">获取指纹识别</span></a></li></ol></div>
             
 
           </div>
